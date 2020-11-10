@@ -17,6 +17,5 @@ class Grype < Formula
 
   def install
     bin.install "grype"
-    bin.install "grype"
   end
 end
