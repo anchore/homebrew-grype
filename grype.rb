@@ -6,8 +6,8 @@ class Grype < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/anchore/grype/releases/download/v0.3.0/grype_0.3.0_darwin_amd64.tar.gz"
-    sha256 "db8b36dd93c668022eb729d6fb37c9f972a5c9c0e9d3fd5394a18d6c04c83d04"
+    url "https://github.com/anchore/grype/releases/download/v0.3.0/grype_0.3.0_darwin_amd64.dmg"
+    sha256 "91a9c03c95fddffeda45ec3ed01147aa15c8c1428bfbbb710d0c3d8a7e475872"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/anchore/grype/releases/download/v0.3.0/grype_0.3.0_linux_amd64.tar.gz"
