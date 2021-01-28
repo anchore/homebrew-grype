@@ -2,16 +2,16 @@
 class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.6.1"
+  version "0.7.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/anchore/grype/releases/download/v0.6.1/grype_0.6.1_darwin_amd64.zip"
-    sha256 "1c368ddf9575e612481bf9d85709abea644859771be4560b4fab425dcac116f2"
+    url "https://github.com/anchore/grype/releases/download/v0.7.0/grype_0.7.0_darwin_amd64.zip"
+    sha256 "4f0b81341bf783bc801f3f3c2feb451b53f5b1f610ec7ed85748f70db89b5f10"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.6.1/grype_0.6.1_linux_amd64.tar.gz"
-      sha256 "91c869450f0640424f4312145de3044a4a4bd6e056e674529116da34b486242b"
+      url "https://github.com/anchore/grype/releases/download/v0.7.0/grype_0.7.0_linux_amd64.tar.gz"
+      sha256 "c6c7d0b55c309b4a184d38746087dd9a557d110026c826ee95f837e1d96bba76"
     end
   end
 
