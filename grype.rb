@@ -6,7 +6,6 @@ class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
   version "0.27.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
