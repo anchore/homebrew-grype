@@ -5,27 +5,28 @@
 class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.29.0"
+  version "0.30.0"
+  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.29.0/grype_0.29.0_darwin_amd64.zip"
-      sha256 "a9cb191e3e9e340c6dda59116dd0f602caae6a1ade3c0cd69d1c9b1d1ce9b3a2"
+      url "https://github.com/anchore/grype/releases/download/v0.30.0/grype_0.30.0_darwin_amd64.zip"
+      sha256 "46fffa8cd9494a984ec77e425b6a8c17407a74282fb39d15a46b953a23688945"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anchore/grype/releases/download/v0.29.0/grype_0.29.0_darwin_arm64.zip"
-      sha256 "96cd558f772f36e0be5e90ce5c47df7e0c0da7a98bd9457095691dcd1312ef6f"
+      url "https://github.com/anchore/grype/releases/download/v0.30.0/grype_0.30.0_darwin_arm64.zip"
+      sha256 "0f9d349b56cbc7b9e2232504869b2d4cf5e662fe8b38be646f041b1bd118e812"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.29.0/grype_0.29.0_linux_amd64.tar.gz"
-      sha256 "b32116d1c81f0b43e075276c54986a2f81e68822444b560247602c9063498216"
+      url "https://github.com/anchore/grype/releases/download/v0.30.0/grype_0.30.0_linux_amd64.tar.gz"
+      sha256 "0a161ebf99f5ec95f3b166570a450821fd477ac4d5a14695be7e345d49ddeb46"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/grype/releases/download/v0.29.0/grype_0.29.0_linux_arm64.tar.gz"
-      sha256 "9eec82739d7058e7e0cff4a870b0d34030524c97c715e412ce8960159b52e056"
+      url "https://github.com/anchore/grype/releases/download/v0.30.0/grype_0.30.0_linux_arm64.tar.gz"
+      sha256 "5ab68f3807ab797d20f4930ea5f16340edba4edfc3d7563d8440389ef4d4378e"
     end
   end
 
