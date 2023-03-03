@@ -5,21 +5,21 @@
 class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.58.0"
+  version "0.59.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.58.0/grype_0.58.0_darwin_amd64.tar.gz"
-      sha256 "bcb3cd9d18b7ce0d37dca88c3a16195dd1d40a8e4868cd914bb9e317c216b251"
+      url "https://github.com/anchore/grype/releases/download/v0.59.0/grype_0.59.0_darwin_amd64.tar.gz"
+      sha256 "c7b9461aab0fd906d5788bf22706d32a6250481ca5b3949187d024ca68aaf856"
 
       def install
         bin.install "grype"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anchore/grype/releases/download/v0.58.0/grype_0.58.0_darwin_arm64.tar.gz"
-      sha256 "e93c71d01025a0dc701662c9a3c92e7204fe069659ee2b97aa4d0e06d012ed87"
+      url "https://github.com/anchore/grype/releases/download/v0.59.0/grype_0.59.0_darwin_arm64.tar.gz"
+      sha256 "08ab9eb256d2df5db7dcbacfc313e24093b038d0f23e598081a59d0402a35122"
 
       def install
         bin.install "grype"
@@ -29,16 +29,16 @@ class Grype < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/grype/releases/download/v0.58.0/grype_0.58.0_linux_arm64.tar.gz"
-      sha256 "520f7483183bcfdc798a8b533aa3a87a08f22abba4857ab5d93ff28e0a78b342"
+      url "https://github.com/anchore/grype/releases/download/v0.59.0/grype_0.59.0_linux_arm64.tar.gz"
+      sha256 "65fd915462a5fbcb6c17246643c7d785054cfc88245c9217653b8ccb8a41864c"
 
       def install
         bin.install "grype"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.58.0/grype_0.58.0_linux_amd64.tar.gz"
-      sha256 "e9212ff2e3a2e2e9d549e0f97f5402194f124a647d9f55c87b1b6b140ad6ca87"
+      url "https://github.com/anchore/grype/releases/download/v0.59.0/grype_0.59.0_linux_amd64.tar.gz"
+      sha256 "10f519c1097fbc2e0dec8f4727e5245fcd2c834b5d75a50f8c748e8ab78b95c4"
 
       def install
         bin.install "grype"
