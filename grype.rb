@@ -5,21 +5,21 @@
 class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.69.1"
+  version "0.70.0"
   license "Apache License 2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/anchore/grype/releases/download/v0.69.1/grype_0.69.1_darwin_arm64.tar.gz"
-      sha256 "5b482c0f9806ddda60d8c586952dff9651500bd5a298d1e84b624d7cf25908e3"
+    if Hardware::CPU.intel?
+      url "https://github.com/anchore/grype/releases/download/v0.70.0/grype_0.70.0_darwin_amd64.tar.gz"
+      sha256 "b110015142c0d87a608685f6662af86094c89141419d54865643503ece6f6853"
 
       def install
         bin.install "grype"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.69.1/grype_0.69.1_darwin_amd64.tar.gz"
-      sha256 "da6846fe8d722c852e3e0583f0511443219829195f972e84550ef2843b760110"
+    if Hardware::CPU.arm?
+      url "https://github.com/anchore/grype/releases/download/v0.70.0/grype_0.70.0_darwin_arm64.tar.gz"
+      sha256 "ab0dd4989404f1ebf987d4eea4bc69a6cc623c342e17056a6862e41daaa22c39"
 
       def install
         bin.install "grype"
@@ -28,17 +28,17 @@ class Grype < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/anchore/grype/releases/download/v0.69.1/grype_0.69.1_linux_amd64.tar.gz"
-      sha256 "53ad7a96d0561fdacc82519972025ba0f1a74e16edfdf628d4ce16cc3c714817"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/anchore/grype/releases/download/v0.70.0/grype_0.70.0_linux_arm64.tar.gz"
+      sha256 "53746f80a92bf8555eadd5fe399a9a14d9b91a6dc02529a6124d6b5e2564932e"
 
       def install
         bin.install "grype"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/grype/releases/download/v0.69.1/grype_0.69.1_linux_arm64.tar.gz"
-      sha256 "22d4fdf249fa9f73d4eff8bb4fb19649171da4cf1eb420422fae1da57065a739"
+    if Hardware::CPU.intel?
+      url "https://github.com/anchore/grype/releases/download/v0.70.0/grype_0.70.0_linux_amd64.tar.gz"
+      sha256 "9d2743de7c6e7754a8e2bee6e8e8ee78619f68f212e4b006aa7a6b2f9831b99b"
 
       def install
         bin.install "grype"
