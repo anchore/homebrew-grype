@@ -5,21 +5,21 @@
 class Grype < Formula
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.79.5"
+  version "0.79.6"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/anchore/grype/releases/download/v0.79.5/grype_0.79.5_darwin_amd64.tar.gz"
-      sha256 "da539c409e3abf8a0d88b1eb7336688bfee60c22eb14671dddcd90e86c6c5357"
+      url "https://github.com/anchore/grype/releases/download/v0.79.6/grype_0.79.6_darwin_amd64.tar.gz"
+      sha256 "bbb8015dbdfd7455c5eca3f3e5a07165b49f81de6e314a709514b1563f1873ab"
 
       def install
         bin.install "grype"
       end
     end
     on_arm do
-      url "https://github.com/anchore/grype/releases/download/v0.79.5/grype_0.79.5_darwin_arm64.tar.gz"
-      sha256 "62a4fafe49fc462b2732f136c1f544eb5041a8f975b840bd0fe6c81a17f3bc4d"
+      url "https://github.com/anchore/grype/releases/download/v0.79.6/grype_0.79.6_darwin_arm64.tar.gz"
+      sha256 "cf2a5296efcc91e33733e47b58b2fbd6674925ca0fedb501b8aaa9494c79211b"
 
       def install
         bin.install "grype"
@@ -30,8 +30,8 @@ class Grype < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anchore/grype/releases/download/v0.79.5/grype_0.79.5_linux_amd64.tar.gz"
-        sha256 "ff054e389ffb40619911f6bd75b3f46610245df9b11ab72fcdc2e08b9c34a09e"
+        url "https://github.com/anchore/grype/releases/download/v0.79.6/grype_0.79.6_linux_amd64.tar.gz"
+        sha256 "d537f8ef9cc0b597684a9a750ed07738d4052dd62ae835cb4b93381b67997495"
 
         def install
           bin.install "grype"
@@ -40,8 +40,8 @@ class Grype < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anchore/grype/releases/download/v0.79.5/grype_0.79.5_linux_arm64.tar.gz"
-        sha256 "20f55117742aec388bf28bb24122236d3705e53996a27524e934569c5a0992cb"
+        url "https://github.com/anchore/grype/releases/download/v0.79.6/grype_0.79.6_linux_arm64.tar.gz"
+        sha256 "3e7a673052a77b8e0a29f772d78ecfae13b1d5db2213ca512e9c61ed2095e5e9"
 
         def install
           bin.install "grype"
