@@ -8,6 +8,9 @@ class Grype < Formula
   version "0.94.0"
   license "Apache License 2.0"
 
+  # point users to the new cask...
+  disable! date: "2025-07-01", because: "the cask should be used now instead", replacement_cask: "grype"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anchore/grype/releases/download/v0.94.0/grype_0.94.0_darwin_amd64.tar.gz"
