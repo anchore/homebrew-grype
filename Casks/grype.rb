@@ -3,7 +3,7 @@ cask "grype" do
   name "grype"
   desc "A vulnerability scanner for container images and filesystems"
   homepage "https://github.com/anchore/grype"
-  version "0.104.3"
+  version "0.104.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "grype" do
   on_macos do
     on_intel do
       url "https://github.com/anchore/grype/releases/download/v#{version}/grype_#{version}_darwin_amd64.tar.gz"
-      sha256 "ecc940eeda844fedf5175aa055bd3efa0a9479f2c41b56efd689bdb918413ffa"
+      sha256 "1a563fccb0f43d12be6e10c54bc15631691e251218a32eaf8a8158790b52bffd"
     end
     on_arm do
       url "https://github.com/anchore/grype/releases/download/v#{version}/grype_#{version}_darwin_arm64.tar.gz"
-      sha256 "a2fd4ac95d7c4b2ff65da2e7cecb08d826e0cac6e3e2646aee8989558d9d3006"
+      sha256 "18354315732025815e99e3b0a20667b5156c184e440de8678eb9774e61787893"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/anchore/grype/releases/download/v#{version}/grype_#{version}_linux_amd64.tar.gz"
-      sha256 "2e33177f2fba9b67c352019d2f526e7d730fed398902e5fce17d35149626eedb"
+      sha256 "6c1c680118338e9fed66cf17b51a3be7d82691ef45073c772a8483e255edb68c"
     end
     on_arm do
       url "https://github.com/anchore/grype/releases/download/v#{version}/grype_#{version}_linux_arm64.tar.gz"
-      sha256 "2290f4e3dcdc1a6bc6e857eafbbac6d208e6cdbb723ac63e84694e6e15771a1a"
+      sha256 "2679b7240a36c54420c5e40a3f35e8ad6511b26ca50ef4db0e4d2bd624e86dee"
     end
   end
 
